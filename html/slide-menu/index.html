@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=1">
+	
+	<link rel="stylesheet" href="inc/css/style.css">	
+	<script src="inc/js/jquery.min.js"></script>
+	<script>
+		/*
+			=================
+			OPEN Slide Menu Function
+			=================
+		*/
+		function openMenu() {
+			$(".slideMenu").addClass('activeView');
+			$(".menuOverlay").fadeIn("fast");
+		}
+		
+		/*
+			=================
+			HIDE Slide Menu Function
+			=================
+		*/
+		function hideMenu() {
+			$(".slideMenu").removeClass('activeView');
+			$(".menuOverlay").fadeOut("fast");
+		}
+	</script>
+</head>
+<body>
+
+	<!-- Button Triger to open menu -->
+	<button onclick="openMenu();">Click to Open Menu</button>
+	
+	
+	<!-- 
+		- Slide Menu Overlay 
+		- Clicking on it will hide menu
+	-->
+	<div class="menuOverlay" onclick="hideMenu();"></div>
+
+	
+	<!-- 
+		- Slide Menu Div
+		- Open from Right Side add right class E.g. = <div class="slideMenu right">
+	-->
+	<div class="slideMenu">
+		Your Menu HTMl here...		
+	</div>
+	
+	
+	
+	
+</body>
+</html> 
+
+
